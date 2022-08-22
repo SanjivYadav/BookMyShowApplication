@@ -1,4 +1,4 @@
-package com.design.model;
+package com.design.models;
 
 import lombok.Getter;
 import lombok.Setter;

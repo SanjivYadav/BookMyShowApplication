@@ -1,4 +1,4 @@
-package com.design.model;
+package com.design.models;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,5 +14,5 @@ import javax.persistence.MappedSuperclass;
 public class BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 }

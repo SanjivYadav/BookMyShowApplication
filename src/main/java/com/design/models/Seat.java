@@ -1,4 +1,4 @@
-package com.design.model;
+package com.design.models;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,7 +12,7 @@ import javax.persistence.Enumerated;
 @Setter
 public class Seat extends BaseModel{
 
-    private int seat_no;
+    private String seat_no;
 
     @Enumerated(EnumType.STRING)
     private SeatType type;

@@ -1,4 +1,4 @@
-package com.design.model;
+package com.design.models;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -16,7 +16,7 @@ public class Auditorium extends BaseModel{
     * 1 : 1
     *
     */
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     private List<Seat> seats;
     @ElementCollection
     @Enumerated(EnumType.STRING)

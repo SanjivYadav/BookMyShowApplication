@@ -1,19 +1,17 @@
-package com.design.controller;
+package com.design.controllers.usercontroller;
 
-import com.design.dtos.CreateUserRequestDTO;
-import com.design.dtos.CreateUserResponseDTO;
-import com.design.dtos.ResponseStatusDTO;
-import com.design.model.User;
-import com.design.service.UserService;
+
+import com.design.dtos.userdtos.CreateUserRequestDTO;
+import com.design.dtos.userdtos.CreateUserResponseDTO;
+import com.design.dtos.userdtos.ResponseStatusDTO;
+import com.design.models.User;
+import com.design.services.userservice.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class UserController {
-    private UserService userService;
+    private final UserService userService;
 
     @Autowired
     public UserController(UserService userService){

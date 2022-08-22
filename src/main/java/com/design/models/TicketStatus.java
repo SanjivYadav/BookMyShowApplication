@@ -1,4 +1,4 @@
-package com.design.model;
+package com.design.models;
 
 public enum TicketStatus {
     PENDING,
